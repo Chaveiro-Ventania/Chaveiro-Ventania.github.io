@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaveiro Ventania – Atendimento Rápido e Profissional</title>
+  <meta name="description" content="Chaveiro Ventania: abertura de veículos, residências e empresas, cópia e codificação de chaves. Rápido, confiável e profissional. Desde 1970." />
+  <meta name="keywords" content="chaveiro, abertura de carro, chave codificada, cópia de chave, abertura residencial, chaveiro 24 horas, controle de portão" />
+  <meta property="og:title" content="Chaveiro Ventania" />
+  <meta property="og:description" content="Atendimento rápido e profissional em chaveiro residencial, automotivo e comercial." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* =========================================================
+       CONFIGURAÇÃO FÁCIL — edite aqui sem precisar de programação
+    ========================================================= */
+    :root {
+      /* === CORES === */
+      --azul:      #0a1628;
+      --azul-med:  #0d2347;
+      --azul-claro:#1a3a6b;
+      --amarelo:   #f5c518;
+      --amarelo2:  #e6b800;
+      --branco:    #ffffff;
+      --cinza-claro:#f4f6fa;
+      --cinza:     #b0bac9;
+      --texto:     #e8edf5;
+
+      /* === CONTATO === */
+      --tel:       "(19) 3656-4651/(19) 3656-2785";          /* Telefone fixo */
+      --wpp-loja1: "5519971163240";           /* WhatsApp Loja 1 */
+      --wpp-loja2: "5519993428731";           /* WhatsApp Loja 2 */
+
+      /* === QR CODES – troque os números (apenas dígitos, com DDI) === */
+      --wpp-reginaldo: "5519992306043";
+      --wpp-reinaldo:  "5519992769152";
+      --wpp-rodrigo:   "5519993428731";
+      --wpp-ronaldo:   "5519992966228";
+    }
+
+    /* =========================================================
+       RESET & BASE
+    ========================================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--azul);
+      color: var(--texto);
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a  { text-decoration: none; color: inherit; }
+
+    /* =========================================================
+       UTILITÁRIOS
+    ========================================================= */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .section    { padding: 90px 0; }
+    .section-alt { background: var(--azul-med); }
+    .section-dark { background: var(--azul); }
+
+    .tag {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.05;
+      color: var(--branco);
+    }
+    .section-title span { color: var(--amarelo); }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--cinza);
+      margin-top: 14px;
+      max-width: 560px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all .25s;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--amarelo);
+      color: var(--azul);
+    }
+    .btn-primary:hover { background: var(--amarelo2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,197,24,.35); }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--amarelo);
+      color: var(--amarelo);
+    }
+    .btn-outline:hover { background: var(--amarelo); color: var(--azul); }
+    .btn-wpp {
+      background: #25d366;
+      color: #fff;
+    }
+    .btn-wpp:hover { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,.35); }
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+    header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(10,22,40,.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 2px solid var(--amarelo);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 48px; height: 48px;
+      background: var(--amarelo);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: var(--azul);
+      flex-shrink: 0;
+    }
+    .logo-text { line-height: 1.15; }
+    .logo-text strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.35rem;
+      color: var(--branco);
+      display: block;
+    }
+    .logo-text span {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+    }
+
+    nav { display: flex; align-items: center; gap: 6px; }
+    nav a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--cinza);
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: color .2s, background .2s;
+    }
+    nav a:hover { color: var(--amarelo); background: rgba(245,197,24,.08); }
+
+    .ham { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
+    .ham span {
+      display: block; width: 26px; height: 2px; background: var(--branco);
+      margin: 5px 0; transition: all .3s;
+    }
+
+    /* mobile nav */
+    @media (max-width: 860px) {
+      nav { display: none; flex-direction: column; position: absolute; top: 80px; left: 0; right: 0; background: var(--azul-med); padding: 20px; gap: 4px; border-bottom: 2px solid var(--amarelo); }
+      nav.open { display: flex; }
+      nav a { font-size: 1rem; padding: 12px 16px; }
+      .ham { display: block; }
+      .btn-wpp-header { display: none; }
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(110deg, rgba(10,22,40,.97) 40%, rgba(10,22,40,.7) 100%),
+        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
+    }
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(245,197,24,.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(245,197,24,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-content {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,197,24,.12);
+      border: 1px solid rgba(245,197,24,.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+      margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1;
+      color: var(--branco);
+      max-width: 800px;
+    }
+    .hero h1 span { color: var(--amarelo); }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--cinza);
+      max-width: 560px;
+      margin: 22px 0 38px;
+      line-height: 1.7;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-stats {
+      display: flex; gap: 40px; margin-top: 60px; flex-wrap: wrap;
+    }
+    .stat-item { }
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 2.4rem;
+      color: var(--amarelo);
+      line-height: 1;
+    }
+    .stat-label { font-size: 0.8rem; color: var(--cinza); letter-spacing: 1px; }
+
+    /* scroll indicator */
+    .scroll-line {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      animation: bounce 2s infinite;
+    }
+    .scroll-line span { font-size: 0.65rem; letter-spacing: 2px; color: var(--cinza); text-transform: uppercase; }
+    .scroll-line i { color: var(--amarelo); }
+    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media(max-width:768px){ .about-grid{ grid-template-columns:1fr; gap:40px; } }
+
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img-main {
+      width: 100%;
+      border-radius: 12px;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border: 3px solid var(--amarelo);
+    }
+    .about-badge {
+      position: absolute;
+      bottom: -20px; right: -20px;
+      background: var(--amarelo);
+      color: var(--azul);
+      border-radius: 10px;
+      padding: 16px 22px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(245,197,24,.4);
+    }
+    .about-badge strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 2.2rem;
+      display: block;
+      line-height: 1;
+    }
+    .about-badge span { font-size: 0.75rem; font-weight: 600; }
+
+    .about-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .about-item {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      transition: border-color .25s;
+    }
+    .about-item:hover { border-color: var(--amarelo); }
+    .about-item i { color: var(--amarelo); font-size: 1.2rem; margin-top: 2px; flex-shrink: 0; }
+    .about-item p { font-size: 0.9rem; color: var(--cinza); line-height: 1.5; }
+    .about-item p strong { color: var(--branco); display: block; margin-bottom: 2px; }
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+    }
+    .service-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 12px;
+      padding: 30px 24px;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--amarelo);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .3s;
+    }
+    .service-card:hover { border-color: rgba(245,197,24,.3); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.3); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .svc-icon {
+      width: 56px; height: 56px;
+      background: rgba(245,197,24,.12);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; color: var(--amarelo);
+      margin-bottom: 18px;
+    }
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--branco);
+      margin-bottom: 8px;
+    }
+    .service-card p { font-size: 0.88rem; color: var(--cinza); line-height: 1.6; }
+    .svc-badge {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+      background: rgba(245,197,24,.1);
+      border-radius: 4px;
+      padding: 3px 10px;
+    }
+
+    /* =========================================================
+       DIFERENCIAIS
+    ========================================================= */
+    .diff-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+    }
+    .diff-card {
+      background: linear-gradient(135deg, rgba(245,197,24,.08), rgba(245,197,24,.02));
+      border: 1px solid rgba(245,197,24,.2);
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-align: center;
+      transition: all .25s;
+    }
+    .diff-card:hover { background: rgba(245,197,24,.13); transform: translateY(-3px); }
+    .diff-card i { font-size: 2rem; color: var(--amarelo); margin-bottom: 14px; display: block; }
+    .diff-card h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--branco);
+      margin-bottom: 6px;
+    }
+    .diff-card p { font-size: 0.83rem; color: var(--cinza); line-height: 1.5; }
+
+    /* =========================================================
+       GALLERY
+    ========================================================= */
+    /*
+      INSTRUÇÕES DE EDIÇÃO DE IMAGENS
+      ─────────────────────────────────────────────────────────
+      Para trocar as imagens da galeria:
+      1. Encontre a seção <div class="gallery-grid"> no HTML.
+      2. Cada imagem está dentro de um <div class="gal-item">.
+      3. Troque o atributo src da tag <img> pela URL da nova imagem
+         ou pelo caminho do arquivo (ex: src="fotos/minha-foto.jpg").
+      4. Salve o arquivo. Pronto!
+    */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 12px;
+      margin-top: 50px;
+    }
+    @media(max-width:600px){ .gallery-grid{ grid-template-columns:1fr 1fr; } }
+    .gal-item {
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      transition: border-color .25s, transform .25s;
+      cursor: pointer;
+      position: relative;
+    }
+    .gal-item:hover { border-color: var(--amarelo); transform: scale(1.02); }
+    .gal-item img {
+      width: 100%; height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s;
+    }
+    .gal-item:hover img { transform: scale(1.07); }
+    .gal-item:first-child { grid-column: span 2; }
+    .gal-item:first-child img { height: 320px; }
+    .gal-overlay {
+      position: absolute; inset: 0;
+      background: rgba(10,22,40,.5);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity .3s;
+      color: var(--amarelo); font-size: 1.8rem;
+    }
+    .gal-item:hover .gal-overlay { opacity: 1; }
+
+    /* =========================================================
+       DEPOIMENTOS
+    ========================================================= */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 50px;
+    }
+    .review-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      padding: 26px;
+      position: relative;
+      transition: border-color .25s;
+    }
+    .review-card:hover { border-color: rgba(245,197,24,.3); }
+    .review-stars { color: var(--amarelo); font-size: 0.9rem; margin-bottom: 14px; }
+    .review-text { font-size: 0.92rem; color: var(--cinza); line-height: 1.7; font-style: italic; }
+    .review-author {
+      display: flex; align-items: center; gap: 12px;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+    .rev-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--amarelo);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      color: var(--azul);
+      flex-shrink: 0;
+    }
+    .rev-name { font-weight: 600; font-size: 0.9rem; color: var(--branco); }
+    .rev-via { font-size: 0.75rem; color: var(--cinza); }
+    .google-logo { color: #4285f4; margin-left: 4px; }
+
+    /* =========================================================
+       HORÁRIO / CONTACT
+    ========================================================= */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    @media(max-width:768px){ .contact-grid{ grid-template-columns:1fr; } }
+
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .hours-table td { padding: 10px 0; font-size: 0.92rem; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .hours-table td:first-child { color: var(--cinza); }
+    .hours-table td:last-child { text-align: right; font-weight: 600; color: var(--branco); }
+    .open-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #25d366; margin-right: 6px; }
+    .closed-dot { background: #e74c3c; }
+
+    .contact-items { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 10px; padding: 16px;
+      transition: border-color .2s;
+    }
+    .contact-item:hover { border-color: var(--amarelo); }
+    .contact-item i { color: var(--amarelo); font-size: 1.2rem; margin-top: 2px; flex-shrink: 0; }
+    .contact-item p { font-size: 0.9rem; color: var(--cinza); line-height: 1.5; }
+    .contact-item p strong { color: var(--branco); display: block; }
+
+    .map-embed {
+      width: 100%; height: 300px; border: 0; border-radius: 12px;
+      margin-top: 24px; border: 2px solid rgba(245,197,24,.2);
+    }
+
+    /* =========================================================
+       QR CODES — "FALE CONOSCO"
+    ========================================================= */
+    /*
+      INSTRUÇÕES DE EDIÇÃO DOS QR CODES
+      ─────────────────────────────────────────────────────────
+      Para trocar os números de WhatsApp:
+      1. No início deste CSS, altere as variáveis:
+         --wpp-reginaldo, --wpp-reinaldo, --wpp-rodrigo, --wpp-ronaldo
+         colocando o número com código do país (55) + DDD + número.
+         Exemplo: 5519999887766
+      2. Para trocar via JavaScript, procure a função setupQRCodes()
+         no <script> no final do arquivo e substitua os números.
+    */
+    .qr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+    .qr-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: all .3s;
+    }
+    .qr-card:hover { border-color: var(--amarelo); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.3); }
+    .qr-store-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+      background: rgba(245,197,24,.1);
+      border-radius: 4px;
+      padding: 4px 12px;
+      margin-bottom: 14px;
+    }
+    .qr-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.3rem;
+      color: var(--branco);
+      margin-bottom: 6px;
+    }
+    .qr-card p { font-size: 0.82rem; color: var(--cinza); margin-bottom: 20px; }
+    .qr-img-wrap {
+      width: 160px; height: 160px;
+      margin: 0 auto 16px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .qr-img-wrap canvas, .qr-img-wrap img { width: 100%; height: 100%; }
+    .qr-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background .2s, transform .2s;
+    }
+    .qr-link:hover { background: #1ebe5d; transform: scale(1.03); }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+    footer {
+      background: #060e1a;
+      border-top: 2px solid var(--amarelo);
+      padding: 50px 0 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    @media(max-width:860px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+    @media(max-width:480px){ .footer-grid{ grid-template-columns:1fr; } }
+
+    .footer-brand p { font-size: 0.88rem; color: var(--cinza); margin-top: 14px; line-height: 1.7; max-width: 280px; }
+    .social-row { display: flex; gap: 10px; margin-top: 20px; }
+    .social-btn {
+      width: 38px; height: 38px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--cinza);
+      font-size: 0.95rem;
+      transition: all .2s;
+    }
+    .social-btn:hover { background: var(--amarelo); border-color: var(--amarelo); color: var(--azul); transform: translateY(-2px); }
+
+    .footer-col h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul li a { font-size: 0.88rem; color: var(--cinza); transition: color .2s; }
+    .footer-col ul li a:hover { color: var(--amarelo); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--cinza); }
+
+    /* =========================================================
+       WHATSAPP FLOAT
+    ========================================================= */
+    .wpp-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 999;
+      width: 58px; height: 58px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.7rem; color: #fff;
+      box-shadow: 0 6px 24px rgba(37,211,102,.5);
+      transition: transform .2s, box-shadow .2s;
+      animation: wppPulse 3s infinite;
+    }
+    .wpp-float:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,.7); }
+    @keyframes wppPulse {
+      0%,100%{ box-shadow: 0 6px 24px rgba(37,211,102,.5); }
+      50%    { box-shadow: 0 6px 36px rgba(37,211,102,.8), 0 0 0 10px rgba(37,211,102,.1); }
+    }
+
+    /* =========================================================
+       DIVIDER
+    ========================================================= */
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--amarelo), transparent);
+      margin: 0;
+    }
+
+    /* =========================================================
+       LIGHTBOX (galeria)
+    ========================================================= */
+    .lightbox {
+      display: none;
+      position: fixed; inset: 0; z-index: 2000;
+      background: rgba(0,0,0,.9);
+      align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 8px; }
+    .lightbox-close {
+      position: absolute; top: 20px; right: 28px;
+      color: #fff; font-size: 2.2rem; cursor: pointer; background: none; border: none;
+    }
+
+    /* =========================================================
+       ANIMAÇÕES DE ENTRADA
+    ========================================================= */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity .6s, transform .6s; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- ===================== WHATSAPP FLOAT ===================== -->
+<!-- EDITAR: troque o número abaixo (apenas dígitos) -->
+<a class="wpp-float" href="https://wa.me/5519971163240?text=Olá!%20Preciso%20de%20atendimento%20do%20Chaveiro%20Ventania." target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img id="lb-img" src="" alt="" />
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon"><i class="fas fa-key"></i></div>
+      <div class="logo-text">
+        <strong>Chaveiro Ventania</strong>
+        <span>Desde 1970 · Confiança & Rapidez</span>
+      </div>
+    </a>
+
+    <nav id="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#depoimentos">Avaliações</a>
+      <a href="#contato">Contato</a>
+      <!-- EDITAR: troque o número no href abaixo -->
+      <a href="https://wa.me/5519992306043?text=Olá!%20Gostaria%20de%20atendimento." target="_blank" class="btn btn-wpp btn-wpp-header">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </nav>
+
+    <button class="ham" id="ham" aria-label="Menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-shield-alt"></i> Serviço Autorizado & Garantido</div>
+    <h1>Chaveiro <span>Ventania</span> — Atendimento Rápido e Profissional</h1>
+    <p>Abertura de veículos, residências e empresas. Cópia e codificação de chaves. Controle de portão. Atendimento emergencial 24 horas.</p>
+    <div class="hero-btns">
+      <!-- EDITAR: troque o número no href abaixo -->
+      <a href="https://wa.me/5519971163240?text=Olá!%20Preciso%20de%20atendimento%20urgente." target="_blank" class="btn btn-wpp"><i class="fab fa-whatsapp"></i> Solicitar Atendimento</a>
+      <a href="#servicos" class="btn btn-outline"><i class="fas fa-tools"></i> Ver Serviços</a>
+    </div>
+    <div class="hero-stats fade-in">
+      <div class="stat-item"><div class="stat-num">+50</div><div class="stat-label">Anos de Experiência</div></div>
+      <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Lojas no Município</div></div>
+      <div class="stat-item"><div class="stat-num">24h</div><div class="stat-label">Emergência</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Garantia de Serviço</div></div>
+    </div>
+  </div>
+  <div class="scroll-line"><span>Role</span><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== SOBRE ===================== -->
+<section class="section section-alt" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-in">
+        <!--
+          EDITAR IMAGEM — troque o src abaixo pela foto da loja ou equipe.
+          Exemplo: src="imagens/loja.jpg"
+        -->
+        <img class="about-img-main"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBp7Wokw4HkD_IeYZ3VHNQ08Cf2I5hHxx15vMXWZsDA&s=10"
+             alt="Chaveiro Ventania — Profissional de chaves" />
+        <div class="about-badge">
+          <strong>+50</strong>
+          <span>Anos de<br>Tradição</span>
+        </div>
+      </div>
+
+      <div class="fade-in" style="padding-top:20px">
+        <div class="tag">Quem Somos</div>
+        <h2 class="section-title">Tradição e <span>Confiança</span> desde 1970</h2>
+        <p class="section-sub">O Chaveiro Ventania nasceu com o compromisso de oferecer soluções rápidas, seguras e acessíveis para quem precisa de um chaveiro de confiança.</p>
+        <div class="about-items">
+          <div class="about-item"><i class="fas fa-medal"></i><p><strong>Experiência Comprovada</strong>Mais de 50 anos atendendo famílias e empresas.</p></div>
+          <div class="about-item"><i class="fas fa-bolt"></i><p><strong>Atendimento Rápido</strong>Chegamos onde você está no menor tempo possível.</p></div>
+          <div class="about-item"><i class="fas fa-microchip"></i><p><strong>Equipamentos Modernos</strong>Tecnologia de ponta para chaves codificadas e controles.</p></div>
+          <div class="about-item"><i class="fas fa-star"></i><p><strong>Garantia de Serviço</strong>Todos os serviços têm garantia. Sua satisfação é nossa prioridade.</p></div>
+        </div>
+        <a href="#contato" class="btn btn-primary" style="margin-top:28px"><i class="fas fa-phone"></i> Fale Conosco</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== SERVIÇOS ===================== -->
+<section class="section section-dark" id="servicos">
+  <div class="container">
+    <div style="text-align:center" class="fade-in">
+      <div class="tag">O que fazemos</div>
+      <h2 class="section-title">Nossos <span>Serviços</span></h2>
+      <p class="section-sub" style="margin:14px auto 0">Soluções completas para qualquer emergência ou necessidade com chaves e fechaduras.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-car"></i></div>
+        <h3>Abertura de Veículos</h3>
+        <p>Carro travado? Chave quebrada na ignição? Abrimos qualquer modelo sem danos ao veículo.</p>
+        <span class="svc-badge">Rápido</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-home"></i></div>
+        <h3>Abertura Residencial</h3>
+        <p>Ficou do lado de fora de casa? Realizamos a abertura de portas e janelas com segurança.</p>
+        <span class="svc-badge">Rápido</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-building"></i></div>
+        <h3>Abertura Comercial</h3>
+        <p>Abertura de escritórios, lojas e galpões. Atendemos PJ com agilidade e discrição.</p>
+        <span class="svc-badge">Empresas</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-copy"></i></div>
+        <h3>Cópia de Chaves</h3>
+        <p>Duplicação de chaves comuns, chaves especiais e chaves de alta segurança com precisão.</p>
+        <span class="svc-badge">Econômico</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-microchip"></i></div>
+        <h3>Chaves Codificadas</h3>
+        <p>Programação e codificação de chaves com transponder para todos os modelos de veículos.</p>
+        <span class="svc-badge">Tecnologia</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-broadcast-tower"></i></div>
+        <h3>Controle de Portão</h3>
+        <p>Cópia e programação de controles de portão eletrônico e garagem.</p>
+        <span class="svc-badge">Facilidade</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-lock"></i></div>
+        <h3>Troca de Fechaduras</h3>
+        <p>Instalação e troca de fechaduras residenciais, comerciais e digitais com garantia.</p>
+        <span class="svc-badge">Segurança</span>
+      </div>
+      <div class="service-card fade-in">
+        <div class="svc-icon"><i class="fas fa-ambulance"></i></div>
+        <h3>Atendimento Emergencial</h3>
+        <p>Atendimento emergencial a qualquer hora do dia ou da noite. Ligue agora!</p>
+        <span class="svc-badge">Urgente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== DIFERENCIAIS ===================== -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="text-align:center" class="fade-in">
+      <div class="tag">Por que nos escolher</div>
+      <h2 class="section-title">Nossos <span>Diferenciais</span></h2>
+    </div>
+    <div class="diff-wrap">
+      <div class="diff-card fade-in"><i class="fas fa-bolt"></i><h4>Atendimento Rápido</h4><p>Deslocamento ágil para qualquer ponto da cidade.</p></div>
+      <div class="diff-card fade-in"><i class="fas fa-user-tie"></i><h4>Profissionais Qualificados</h4><p>Equipe treinada e certificada para todos os serviços.</p></div>
+      <div class="diff-card fade-in"><i class="fas fa-tools"></i><h4>Equipamentos Modernos</h4><p>Ferramentas de última geração para chaves e fechaduras.</p></div>
+      <div class="diff-card fade-in"><i class="fas fa-star"></i><h4>Garantia de Serviço</h4><p>Todo serviço tem garantia. Ficou insatisfeito? Resolvemos.</p></div>
+      <div class="diff-card fade-in"><i class="fas fa-shield-alt"></i><h4>Empresa de Confiança</h4><p>Mais de 50 anos de reputação e tradição no município.</p></div>
+      <div class="diff-card fade-in"><i class="fas fa-dollar-sign"></i><h4>Preço Justo</h4><p>Orçamento transparente e sem surpresas na hora do pagamento.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== GALERIA ===================== -->
+<section class="section section-dark" id="galeria">
+  <div class="container">
+    <div style="text-align:center" class="fade-in">
+      <div class="tag">Galeria</div>
+      <h2 class="section-title">Nossa <span>Estrutura</span></h2>
+      <p class="section-sub" style="margin:14px auto 0">Conheça nossas lojas e serviços.</p>
+    </div>
+
+    <!--
+      ===== COMO TROCAR AS IMAGENS DA GALERIA =====
+      Substitua os atributos src de cada <img> abaixo pela URL ou caminho da nova foto.
+      Exemplo: src="fotos/minha-loja.jpg"
+      Você pode adicionar mais .gal-item ou remover os que não precisar.
+    -->
+    <div class="gallery-grid">
+      <div class="gal-item" onclick="openLightbox('https://i.pinimg.com/736x/b4/7a/14/b47a1485330038bf8e37e47b21218765.jpg')">
+        <img src="https://i.pinimg.com/736x/b4/7a/14/b47a1485330038bf8e37e47b21218765.jpg" alt="Chaveiro Ventania - Loja" loading="lazy" />
+        <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gal-item" onclick="openLightbox('https://i.pinimg.com/736x/4d/f0/ff/4df0ff209abf02242d0c51ab1c653216.jpg')">
+        <img src="https://i.pinimg.com/736x/4d/f0/ff/4df0ff209abf02242d0c51ab1c653216.jpg" alt="Chaveiro profissional" loading="lazy" />
+        <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gal-item" onclick="openLightbox('https://i.pinimg.com/736x/65/79/15/6579152d88989e5ee667033e44319ffd.jpg')">
+        <img src="https://i.pinimg.com/736x/65/79/15/6579152d88989e5ee667033e44319ffd.jpg" alt="Chaves codificadas automotivas" loading="lazy" />
+        <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gal-item" onclick="openLightbox('https://i.pinimg.com/736x/b7/c2/75/b7c275f42966e4ad9a329e1379d01cfc.jpg')">
+        <img src="https://i.pinimg.com/736x/b7/c2/75/b7c275f42966e4ad9a329e1379d01cfc.jpg" alt="Serviço de chaveiro" loading="lazy" />
+        <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gal-item" onclick="openLightbox('https://i.pinimg.com/736x/96/76/61/96766103cfba440fd278251d6f845792.jpg')">
+        <img src="https://i.pinimg.com/736x/96/76/61/96766103cfba440fd278251d6f845792.jpg" alt="Abertura de veículos" loading="lazy" />
+        <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gal-item" onclick="openLightbox('https://i.pinimg.com/736x/02/5f/21/025f213559fc7061702ff667449e1196.jpg')">
+        <img src="https://i.pinimg.com/736x/02/5f/21/025f213559fc7061702ff667449e1196.jpg" alt="Controle de portão e fechaduras" loading="lazy" />
+        <div class="gal-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section class="section section-alt" id="depoimentos">
+  <div class="container">
+    <div style="text-align:center" class="fade-in">
+      <div class="tag">Avaliações</div>
+      <h2 class="section-title">O que nossos <span>Clientes</span> dizem</h2>
+      <p class="section-sub" style="margin:14px auto 0">Avaliações reais de clientes satisfeitos. <i class="fab fa-google google-logo"></i> Google Meu Negócio</p>
+    </div>
+    <!--
+      EDITAR DEPOIMENTOS: substitua os textos, nomes e iniciais abaixo
+      pelos depoimentos reais copiados do seu Google Meu Negócio.
+    -->
+    <div class="reviews-grid">
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Chaveiro ventania conta com equipamentos apropriado para chaves codificadas atendimento com excelência.conta ainda acessórios cabos, plugue, Fontes, conversores toda linha de acessórios para seu celular venha conferir chaveiro ventania a mais de 40anos servindo sul de Minas e leste paulista"</p>
+        <div class="review-author"><div class="rev-avatar">E</div><div><div class="rev-name">Edson eletrônica Mococa</div><div class="rev-via">via <i class="fab fa-google google-logo"></i> Google</div></div></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"O atendimento é muito bom, cordial, buscando me atender no que eu estava precisando comprar, trazendo algumas opções pra escolher e também com dicas do produto. O preço dos produtos também são bons e facilidade de pagamento."</p>
+        <div class="review-author"><div class="rev-avatar">M</div><div><div class="rev-name">Mauricio Masili</div><div class="rev-via">via <i class="fab fa-google google-logo"></i> Google</div></div></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"É o melhor serviço da cidade. Sempre muito eficientes e prestativos."</p>
+        <div class="review-author"><div class="rev-avatar">J</div><div><div class="rev-name">Jessica Nascimento</div><div class="rev-via">via <i class="fab fa-google google-logo"></i> Google</div></div></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Empresa familiar , atendimento atencioso."</p>
+        <div class="review-author"><div class="rev-avatar">R</div><div><div class="rev-name">Ricardo Figueiredo</div><div class="rev-via">via <i class="fab fa-google google-logo"></i> Google</div></div></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Profissionais com alto nível de conhecimento técnico. Além de educados e atenciosos."</p>
+        <div class="review-author"><div class="rev-avatar">D</div><div><div class="rev-name">Daniel Trambini</div><div class="rev-via">via <i class="fab fa-google google-logo"></i> Google</div></div></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Excelente localização ótimo atendimento e profissionais capacitados"</p>
+        <div class="review-author"><div class="rev-avatar">M</div><div><div class="rev-name">Maria Pietra</div><div class="rev-via">via <i class="fab fa-google google-logo"></i> Google</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== CONTATO ===================== -->
+<section class="section section-dark" id="contato">
+  <div class="container">
+    <div class="fade-in" style="margin-bottom:50px">
+      <div class="tag">Onde estamos</div>
+      <h2 class="section-title">Área de <span>Contato</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="fade-in">
+        <!--
+          EDITAR INFORMAÇÕES DE CONTATO:
+          Substitua os textos entre as tags <strong> e <p> pelos dados reais.
+        -->
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>
+              <strong>Telefone - Loja 1 / Loja 2</strong>
+              <!-- EDITAR: coloque os telefones reais abaixo -->
+              (19) 3656-4651 &nbsp;|&nbsp; (19) 3656-2785
+            </p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>
+              <strong>Loja 1 — Centro</strong>
+              <!-- EDITAR: coloque o endereço real abaixo -->
+              Rua Deputado Paschoal Ranieri Mazili, 127 – Centro, Mococa – SP
+            </p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>
+              <strong>Loja 2 — Vila Santa Rosa</strong>
+              <!-- EDITAR: coloque o endereço real abaixo -->
+              Rua Pernambuco, 319 – Vila Santa Rosa, Mococa – SP
+            </p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>
+              <strong>CEP</strong>
+              <!-- EDITAR: coloque o e-mail real abaixo -->
+              13730-059 Loja 1 | 113731-250 Loja 2
+            </p>
+          </div>
+        </div>
+
+        <!-- HORÁRIOS -->
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;color:var(--amarelo);margin-top:30px;margin-bottom:4px;letter-spacing:2px;text-transform:uppercase;">Horário de Funcionamento - Loja 1</h3>
+        <table class="hours-table">
+          <tr><td><span class="open-dot"></span>Segunda a Sexta</td><td>08:00 – 12:00 &nbsp;|&nbsp; 13:30 – 18:00</td></tr>
+          <tr><td><span class="open-dot"></span>Sábado</td><td>08:00 – 13:00</td></tr>
+          <tr><td><span class="open-dot closed-dot"></span>Domingo</td><td>Fechado</td></tr>
+          <tr><td><span class="open-dot"></span>Emergências</td><td>24 horas — WhatsApp</td></tr>
+        </table>
+      </div>
+
+      <div class="fade-in">
+        <!--
+          EDITAR MAPA: substitua a src do iframe pelo link de incorporação
+          do seu negócio no Google Maps.
+          Como obter: abra seu negócio no Google Maps → Compartilhar → Incorporar mapa → copie o src.
+        -->
+        <iframe
+          class="map-embed"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59409.3845315908!2d-47.0322468314398!3d-21.465121040173443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schaveiro%20ventania%20vila%20santa%20rosa!5e0!3m2!1spt-BR!2sbr!4v1780946087179!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Chaveiro Ventania">
+        </iframe>
+        <!-- Botões de ação rápida -->
+        <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;">
+          <!-- EDITAR: troque o número do WhatsApp abaixo -->
+          <a href="https://wa.me/5519971163240?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" class="btn btn-wpp" style="flex:1"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+          <a href="tel:1936564651" class="btn btn-outline" style="flex:1"><i class="fas fa-phone"></i> Ligar Agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== QR CODES ===================== -->
+<section class="section section-alt" id="fale-conosco">
+  <div class="container">
+    <div style="text-align:center" class="fade-in">
+      <div class="tag">Contato Direto</div>
+      <h2 class="section-title">Fale <span>Conosco</span></h2>
+      <p class="section-sub" style="margin:14px auto 0">Escaneie o QR Code ou toque no botão para chamar diretamente no WhatsApp de cada profissional.</p>
+    </div>
+
+    <div class="qr-grid" id="qr-grid">
+      <!-- Os cards de QR Code são gerados pelo JavaScript abaixo -->
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon"><i class="fas fa-key"></i></div>
+          <div class="logo-text">
+            <strong>Chaveiro Ventania</strong>
+            <span>Desde 1970 · Confiança & Rapidez</span>
+          </div>
+        </div>
+        <p>Tradição, rapidez e profissionalismo em serviços de chaveiro residencial, automotivo e comercial.</p>
+        <div class="social-row">
+          <!-- EDITAR: coloque os links reais das redes sociais -->
+          <a href="https://www.facebook.com/share/1MC2YAws3J/" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/chaveiro.ventania01?igsh=ZDI0dWUzaGM2ejQ1&utm_source=qr" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5519971163240?text=Olá!%20Gostaria%20de%20um%20orçamento." class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://share.google/woJyFTGa2FKx9fefi" class="social-btn" aria-label="Google"><i class="fab fa-google"></i></a>
+          <p> - Loja 1</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Abertura de Veículos</a></li>
+          <li><a href="#servicos">Abertura Residencial</a></li>
+          <li><a href="#servicos">Abertura Comercial</a></li>
+          <li><a href="#servicos">Cópia de Chaves</a></li>
+          <li><a href="#servicos">Chaves Codificadas</a></li>
+          <li><a href="#servicos">Controle de Portão</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#depoimentos">Avaliações</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#fale-conosco">Fale Conosco</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <!-- EDITAR: substitua pelos dados reais -->
+          <li><a href="tel:1936564651"><i class="fas fa-phone" style="color:var(--amarelo);margin-right:6px"></i>(19) 3656-4651</a></li>
+          <li><a href="tel:1936562785"><i class="fas fa-phone" style="color:var(--amarelo);margin-right:6px"></i>(19) 3656-2785</a></li>
+          <li><a href="https://wa.me/5519971163240" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:6px"></i>WhatsApp - Reinaldo</a></li>
+          <li><a href="https://wa.me/5519992306043" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:6px"></i>WhatsApp - Reginaldo</a></li>
+          <li><a href="https://wa.me/5519993428731" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:6px"></i>WhatsApp - Rodrigo</a></li>
+          <li><a href="https://wa.me/5519992966228" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:6px"></i>WhatsApp - Ronaldo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Chaveiro Ventania. Todos os direitos reservados.</p>
+      <p style="font-size:0.75rem;color:#555">Desenvolvido por Chaveiro Ventania para o melhor atendimento.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================
+     SCRIPTS
+========================================================= -->
+<script>
+  // ── Ano dinâmico no rodapé ──────────────────────────────
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ── Menu mobile ─────────────────────────────────────────
+  function toggleNav() {
+    document.getElementById('nav').classList.toggle('open');
+  }
+  // Fecha ao clicar em link
+  document.querySelectorAll('#nav a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+  });
+
+  // ── Lightbox ────────────────────────────────────────────
+  function openLightbox(src) {
+    document.getElementById('lb-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // ── Animação de entrada (IntersectionObserver) ───────────
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  // ── QR CODES ─────────────────────────────────────────────
+  /*
+    COMO EDITAR OS QR CODES SEM PROGRAMAÇÃO:
+    ─────────────────────────────────────────
+    1. Encontre o array "contacts" abaixo.
+    2. Em cada objeto, altere:
+       - "name": nome do atendente
+       - "store": nome da loja
+       - "phone": número com DDI+DDD+número (apenas dígitos)
+         Exemplo: "5519998887766"
+    3. Salve o arquivo. Os QR Codes serão atualizados automaticamente.
+  */
+  const contacts = [
+    { name: "Reginaldo", store: "Loja 1 — Centro",        phone: "5519XXXXXXXXX" },
+    { name: "Reinaldo",  store: "Loja 1 — Centro",        phone: "5519XXXXXXXXX" },
+    { name: "Rodrigo",   store: "Loja 2 — Vila Santa Rosa", phone: "5519XXXXXXXXX" },
+    { name: "Ronaldo",   store: "Loja 2 — Vila Santa Rosa", phone: "5519XXXXXXXXX" },
+  ];
+
+  function buildQRCards() {
+    const grid = document.getElementById('qr-grid');
+    contacts.forEach(c => {
+      const wppUrl = encodeURIComponent(`Olá ${c.name}! Preciso de atendimento do Chaveiro Ventania.`);
+      const link   = `https://wa.me/${c.phone}?text=${wppUrl}`;
+      const qrSrc  = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&format=png&ecc=M&data=${encodeURIComponent(link)}`;
+
+      const card = document.createElement('div');
+      card.className = 'qr-card fade-in';
+      card.innerHTML = `
+        <div class="qr-store-badge">${c.store}</div>
+        <h3>${c.name}</h3>
+        <p>Toque no botão ou escaneie o QR Code<br>para chamar diretamente no WhatsApp.</p>
+        <div class="qr-img-wrap">
+          <img src="${qrSrc}" alt="QR Code WhatsApp ${c.name}" loading="lazy" />
+        </div>
+        <a href="${link}" target="_blank" class="qr-link">
+          <i class="fab fa-whatsapp"></i> Chamar ${c.name}
+        </a>
+      `;
+      grid.appendChild(card);
+    });
+    // Observar novos elementos
+    document.querySelectorAll('.qr-card').forEach(el => obs.observe(el));
+  }
+  buildQRCards();
+</script>
+</body>
+</html>
